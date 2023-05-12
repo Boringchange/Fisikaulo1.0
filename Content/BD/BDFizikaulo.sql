@@ -8,3 +8,8 @@ nom_usr varchar(25),
 pass varchar(30)
 );
 
+create table IntentosBosque(
+intento int,
+fase int,
+id_usr int 
+);
