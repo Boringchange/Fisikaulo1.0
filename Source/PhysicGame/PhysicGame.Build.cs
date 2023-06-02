@@ -10,14 +10,16 @@ public class PhysicGame : ModuleRules
 	
 		PublicDependencyModuleNames.AddRange(new string[]
 		{
-			"Core", "CoreUObject", "Engine", "InputCore" 
-			
+			"Core", "CoreUObject", "Engine", "InputCore" ,
+			"DatabaseSupport",
+			"SQLiteCore",
+			"SQLiteSupport",
+
 		});
 
 		PrivateDependencyModuleNames.AddRange(new string[]
 		{
-			"SQLiteCore",
-			"SQLiteSupport"
+			
 		});
 
 		// Uncomment if you are using Slate UI
