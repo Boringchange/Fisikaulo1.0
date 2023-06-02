@@ -11,5 +11,12 @@ pass varchar(30)
 create table IntentosBosque(
 intento int,
 fase int,
-id_usr int 
+id_usr int,
+foreign key(id_usr) references perfiles (id_usr) on update cascade on delete cascade
+);
+
+create table AciertosQuest(
+Aciertos int,
+id_usr int,
+foreign key(id_usr) references perfiles (id_usr) on update cascade on delete cascade
 );
